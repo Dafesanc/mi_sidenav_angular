@@ -1,0 +1,15 @@
+<div class="sidenav">
+    <div class="logo-container">
+        <button class="logo">
+        </button>
+        <button class="btn-close"></button>
+    </div>
+    <ul class="sidenav-nav">
+        <li class="sidenav-nav-item" *ngFor="let Data of navData">
+            <a href="" class="sidenav-link-item" [routerLink]="[Data.routeLink]">
+                <i class="sidenav-link-icon" [class]="Data.icon"></i>
+                <span class="sidenav-link-text" *ngIf="collapsed">{{Data.label}}</span>
+            </a>
+        </li>
+    </ul>
+</div>
